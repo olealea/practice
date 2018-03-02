@@ -1,0 +1,23 @@
+package practice_05_2;
+
+public class ShoppingCart {
+    public static void main(String[] args){
+        String custName = "Mary Smith";
+        String[] items = new String[4];
+        items[0] = "Shirt";
+        items[1] = "Skirt";
+        items[2] = "Scarf";
+        items[3] = "Hat";
+
+        String message = custName + " wants to purchase "+items.length+" items.";
+        System.out.println(message);
+
+        System.out.println("Items purchased:");
+        for (String item : items) {
+            System.out.print(item + ", ");
+
+        }
+
+
+    }
+}
