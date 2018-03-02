@@ -9,7 +9,7 @@ public class ShoppingCart {
         item1.descr = "Shirt";
         item2.descr = "Belt";
 
-        System.out.println("Item1: "+item1);
-        System.out.println("Item2: "+item2);
+        System.out.println("Item1: "+item1.descr);
+        System.out.println("Item2: "+item2.descr);
     }
 }
