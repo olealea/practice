@@ -5,28 +5,21 @@ public class ShoppingCart {
         String custName = "Mary Smith";
         String itemDesc = "Shirt";
         String message;
-        double price = 2;
-        double tax = 0.2;
-        int quantity = 5;
-        double total = price * tax * quantity;
+        boolean outOfStock = false;
 
-<<<<<<< HEAD
-        String custName = "Mary Smith";
-        String itemDesc = "Shirt";
-        String message;
-        double price = 2;
-        double tax = 0.2;
-        int quantity = 5;
-        double total = price * tax * quantity;
+        double price = 29.99;
+        int quantity = 2;
+        double tax = 1.04;
+        double total;
 
-        message = custName +" wants to purchase " +quantity+" " +itemDesc;
-        System.out.println(message);
-        System.out.println("Total cost is "+total+" lei.");
+        message = custName +" wants to purchase " +quantity +" " +itemDesc;
+        total = quantity * price * tax;
 
-=======
-        message = custName +" wants to purchase " +quantity+" " +itemDesc;
-        System.out.println(message);
-        System.out.println("Total cost is "+total+" lei.");
->>>>>>> 53dfa9588f3fa32724f024b568355121e2eda21b
+        if (quantity > 1)
+            message = message + "s";
+
+        if (outOfStock)
+            System.out.println("Item is unavaible");
+        else System.out.println(message + "\nThe total cost is "+total);
     }
 }
